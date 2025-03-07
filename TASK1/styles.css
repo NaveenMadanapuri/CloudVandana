@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-card:hover {
+  transform: scale(1.05); /* Card grows in size */
+  background-color: #4caf50; /* Background color changes */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a more intense shadow */
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+  margin-bottom: 10px;
+  transition: all 0.3s ease; /* Smooth transition for the image border color */
+}
+
+.profile-card:hover .profile-img img {
+  border-color: #fff; /* Border color changes to white on hover */
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 5px;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.profile-card:hover .profile-info h2 {
+  color: #fff; /* Text color changes to white on hover */
+}
+
+.designation {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.profile-card:hover .designation {
+  color: #fff; /* Text color changes to white on hover */
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.profile-card:hover .bio {
+  color: #fff; /* Text color changes to white on hover */
+}
+.profile-card:hover .social-icon {
+  color: #fff; /* Icon color changes to white on hover */
+}
